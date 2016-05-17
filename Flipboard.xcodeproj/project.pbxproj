@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F3449641CE3336200247480 /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3449621CE3336200247480 /* MessageCollectionViewCell.swift */; };
+		6F3449651CE3336200247480 /* MessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3449631CE3336200247480 /* MessageCollectionViewCell.xib */; };
+		6F4213291CE58F320022CA87 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4213271CE58F320022CA87 /* SectionView.swift */; };
+		6F42132A1CE58F320022CA87 /* SectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F4213281CE58F320022CA87 /* SectionView.xib */; };
+		6F4F07661CEAD6CD00E2AD05 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F07651CEAD6CD00E2AD05 /* ImageViewController.swift */; };
+		6FBDADF21CE4133000EC4D79 /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDADF11CE4133000EC4D79 /* MainCollectionView.swift */; };
+		6FBDADF41CE4136300EC4D79 /* MainLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDADF31CE4136300EC4D79 /* MainLayout.swift */; };
+		6FF680DF1CE2CC7E00A6C939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680DE1CE2CC7E00A6C939 /* AppDelegate.swift */; };
+		6FF680E11CE2CC7E00A6C939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680E01CE2CC7E00A6C939 /* ViewController.swift */; };
+		6FF680E41CE2CC7E00A6C939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF680E21CE2CC7E00A6C939 /* Main.storyboard */; };
+		6FF680E61CE2CC7E00A6C939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF680E51CE2CC7E00A6C939 /* Assets.xcassets */; };
+		6FF680E91CE2CC7E00A6C939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF680E71CE2CC7E00A6C939 /* LaunchScreen.storyboard */; };
+		6FF680F41CE2CC7E00A6C939 /* FlipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680F31CE2CC7E00A6C939 /* FlipboardTests.swift */; };
+		6FF680FF1CE2CC7E00A6C939 /* FlipboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680FE1CE2CC7E00A6C939 /* FlipboardUITests.swift */; };
+		6FF6810D1CE2D30300A6C939 /* CRNetWorkMannager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6810C1CE2D30300A6C939 /* CRNetWorkMannager.swift */; };
+		804E6BC41E903848B880A772 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE1DA3CA58FAE7D2692DD7 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FF680F01CE2CC7E00A6C939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF680D31CE2CC7D00A6C939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FF680DA1CE2CC7D00A6C939;
+			remoteInfo = Flipboard;
+		};
+		6FF680FB1CE2CC7E00A6C939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF680D31CE2CC7D00A6C939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FF680DA1CE2CC7D00A6C939;
+			remoteInfo = Flipboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BB11D69E482DFDEA0D53D11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6F3449621CE3336200247480 /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F3449631CE3336200247480 /* MessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		6F4213271CE58F320022CA87 /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		6F4213281CE58F320022CA87 /* SectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionView.xib; sourceTree = "<group>"; };
+		6F4F07651CEAD6CD00E2AD05 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		6FBDADF11CE4133000EC4D79 /* MainCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
+		6FBDADF31CE4136300EC4D79 /* MainLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLayout.swift; sourceTree = "<group>"; };
+		6FF680DB1CE2CC7D00A6C939 /* Flipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF680DE1CE2CC7E00A6C939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FF680E01CE2CC7E00A6C939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FF680E31CE2CC7E00A6C939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FF680E51CE2CC7E00A6C939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FF680E81CE2CC7E00A6C939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FF680EA1CE2CC7E00A6C939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF680EF1CE2CC7E00A6C939 /* FlipboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF680F31CE2CC7E00A6C939 /* FlipboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipboardTests.swift; sourceTree = "<group>"; };
+		6FF680F51CE2CC7E00A6C939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF680FA1CE2CC7E00A6C939 /* FlipboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF680FE1CE2CC7E00A6C939 /* FlipboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipboardUITests.swift; sourceTree = "<group>"; };
+		6FF681001CE2CC7E00A6C939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF6810C1CE2D30300A6C939 /* CRNetWorkMannager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRNetWorkMannager.swift; sourceTree = "<group>"; };
+		6FF681101CE2D7A600A6C939 /* Flipboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flipboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		A9476AA1D064DF25741F1FDD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ECDE1DA3CA58FAE7D2692DD7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FF680D81CE2CC7D00A6C939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E6BC41E903848B880A772 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF680EC1CE2CC7E00A6C939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF680F71CE2CC7E00A6C939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F34495C1CE332A400247480 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6F34495D1CE332CD00247480 /* View */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		6F34495D1CE332CD00247480 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FBDADF01CE412E200EC4D79 /* layout */,
+				6FBDADEF1CE412D300EC4D79 /* collectionView */,
+				6FBDADEE1CE412BC00EC4D79 /* cell */,
+				6F4F07651CEAD6CD00E2AD05 /* ImageViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6FBDADEE1CE412BC00EC4D79 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				6F3449621CE3336200247480 /* MessageCollectionViewCell.swift */,
+				6F3449631CE3336200247480 /* MessageCollectionViewCell.xib */,
+				6F4213271CE58F320022CA87 /* SectionView.swift */,
+				6F4213281CE58F320022CA87 /* SectionView.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		6FBDADEF1CE412D300EC4D79 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				6FBDADF11CE4133000EC4D79 /* MainCollectionView.swift */,
+			);
+			name = collectionView;
+			sourceTree = "<group>";
+		};
+		6FBDADF01CE412E200EC4D79 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				6FBDADF31CE4136300EC4D79 /* MainLayout.swift */,
+			);
+			name = layout;
+			sourceTree = "<group>";
+		};
+		6FF680D21CE2CC7D00A6C939 = {
+			isa = PBXGroup;
+			children = (
+				6FF680DD1CE2CC7E00A6C939 /* Flipboard */,
+				6FF680F21CE2CC7E00A6C939 /* FlipboardTests */,
+				6FF680FD1CE2CC7E00A6C939 /* FlipboardUITests */,
+				6FF680DC1CE2CC7D00A6C939 /* Products */,
+				76DA3AB7F86DDBF2BB2C38C3 /* Pods */,
+				9D4E581C98855D8AAA8EC613 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6FF680DC1CE2CC7D00A6C939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FF680DB1CE2CC7D00A6C939 /* Flipboard.app */,
+				6FF680EF1CE2CC7E00A6C939 /* FlipboardTests.xctest */,
+				6FF680FA1CE2CC7E00A6C939 /* FlipboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FF680DD1CE2CC7E00A6C939 /* Flipboard */ = {
+			isa = PBXGroup;
+			children = (
+				6FF680DE1CE2CC7E00A6C939 /* AppDelegate.swift */,
+				6FF680E01CE2CC7E00A6C939 /* ViewController.swift */,
+				6FF6810C1CE2D30300A6C939 /* CRNetWorkMannager.swift */,
+				6F34495C1CE332A400247480 /* Home */,
+				6FF680E21CE2CC7E00A6C939 /* Main.storyboard */,
+				6FF680E51CE2CC7E00A6C939 /* Assets.xcassets */,
+				6FF680E71CE2CC7E00A6C939 /* LaunchScreen.storyboard */,
+				6FF680EA1CE2CC7E00A6C939 /* Info.plist */,
+				6FF681101CE2D7A600A6C939 /* Flipboard-Bridging-Header.h */,
+			);
+			path = Flipboard;
+			sourceTree = "<group>";
+		};
+		6FF680F21CE2CC7E00A6C939 /* FlipboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FF680F31CE2CC7E00A6C939 /* FlipboardTests.swift */,
+				6FF680F51CE2CC7E00A6C939 /* Info.plist */,
+			);
+			path = FlipboardTests;
+			sourceTree = "<group>";
+		};
+		6FF680FD1CE2CC7E00A6C939 /* FlipboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6FF680FE1CE2CC7E00A6C939 /* FlipboardUITests.swift */,
+				6FF681001CE2CC7E00A6C939 /* Info.plist */,
+			);
+			path = FlipboardUITests;
+			sourceTree = "<group>";
+		};
+		76DA3AB7F86DDBF2BB2C38C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9476AA1D064DF25741F1FDD /* Pods.debug.xcconfig */,
+				4BB11D69E482DFDEA0D53D11 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D4E581C98855D8AAA8EC613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE1DA3CA58FAE7D2692DD7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FF680DA1CE2CC7D00A6C939 /* Flipboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF681031CE2CC7E00A6C939 /* Build configuration list for PBXNativeTarget "Flipboard" */;
+			buildPhases = (
+				F08BD3C852F7AD5324ADCDFB /* Check Pods Manifest.lock */,
+				6FF680D71CE2CC7D00A6C939 /* Sources */,
+				6FF680D81CE2CC7D00A6C939 /* Frameworks */,
+				6FF680D91CE2CC7D00A6C939 /* Resources */,
+				377F41F3D265162DC5C1BDD3 /* Embed Pods Frameworks */,
+				390DEC66CBC368B485699385 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flipboard;
+			productName = Flipboard;
+			productReference = 6FF680DB1CE2CC7D00A6C939 /* Flipboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FF680EE1CE2CC7E00A6C939 /* FlipboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF681061CE2CC7E00A6C939 /* Build configuration list for PBXNativeTarget "FlipboardTests" */;
+			buildPhases = (
+				6FF680EB1CE2CC7E00A6C939 /* Sources */,
+				6FF680EC1CE2CC7E00A6C939 /* Frameworks */,
+				6FF680ED1CE2CC7E00A6C939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FF680F11CE2CC7E00A6C939 /* PBXTargetDependency */,
+			);
+			name = FlipboardTests;
+			productName = FlipboardTests;
+			productReference = 6FF680EF1CE2CC7E00A6C939 /* FlipboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FF680F91CE2CC7E00A6C939 /* FlipboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF681091CE2CC7E00A6C939 /* Build configuration list for PBXNativeTarget "FlipboardUITests" */;
+			buildPhases = (
+				6FF680F61CE2CC7E00A6C939 /* Sources */,
+				6FF680F71CE2CC7E00A6C939 /* Frameworks */,
+				6FF680F81CE2CC7E00A6C939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FF680FC1CE2CC7E00A6C939 /* PBXTargetDependency */,
+			);
+			name = FlipboardUITests;
+			productName = FlipboardUITests;
+			productReference = 6FF680FA1CE2CC7E00A6C939 /* FlipboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FF680D31CE2CC7D00A6C939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = chenrui;
+				TargetAttributes = {
+					6FF680DA1CE2CC7D00A6C939 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					6FF680EE1CE2CC7E00A6C939 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6FF680DA1CE2CC7D00A6C939;
+					};
+					6FF680F91CE2CC7E00A6C939 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6FF680DA1CE2CC7D00A6C939;
+					};
+				};
+			};
+			buildConfigurationList = 6FF680D61CE2CC7D00A6C939 /* Build configuration list for PBXProject "Flipboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FF680D21CE2CC7D00A6C939;
+			productRefGroup = 6FF680DC1CE2CC7D00A6C939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FF680DA1CE2CC7D00A6C939 /* Flipboard */,
+				6FF680EE1CE2CC7E00A6C939 /* FlipboardTests */,
+				6FF680F91CE2CC7E00A6C939 /* FlipboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FF680D91CE2CC7D00A6C939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF680E91CE2CC7E00A6C939 /* LaunchScreen.storyboard in Resources */,
+				6FF680E61CE2CC7E00A6C939 /* Assets.xcassets in Resources */,
+				6F3449651CE3336200247480 /* MessageCollectionViewCell.xib in Resources */,
+				6F42132A1CE58F320022CA87 /* SectionView.xib in Resources */,
+				6FF680E41CE2CC7E00A6C939 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF680ED1CE2CC7E00A6C939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF680F81CE2CC7E00A6C939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		377F41F3D265162DC5C1BDD3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		390DEC66CBC368B485699385 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F08BD3C852F7AD5324ADCDFB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FF680D71CE2CC7D00A6C939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF680E11CE2CC7E00A6C939 /* ViewController.swift in Sources */,
+				6FF680DF1CE2CC7E00A6C939 /* AppDelegate.swift in Sources */,
+				6FBDADF41CE4136300EC4D79 /* MainLayout.swift in Sources */,
+				6FBDADF21CE4133000EC4D79 /* MainCollectionView.swift in Sources */,
+				6F3449641CE3336200247480 /* MessageCollectionViewCell.swift in Sources */,
+				6F4213291CE58F320022CA87 /* SectionView.swift in Sources */,
+				6F4F07661CEAD6CD00E2AD05 /* ImageViewController.swift in Sources */,
+				6FF6810D1CE2D30300A6C939 /* CRNetWorkMannager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF680EB1CE2CC7E00A6C939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF680F41CE2CC7E00A6C939 /* FlipboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF680F61CE2CC7E00A6C939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF680FF1CE2CC7E00A6C939 /* FlipboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FF680F11CE2CC7E00A6C939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FF680DA1CE2CC7D00A6C939 /* Flipboard */;
+			targetProxy = 6FF680F01CE2CC7E00A6C939 /* PBXContainerItemProxy */;
+		};
+		6FF680FC1CE2CC7E00A6C939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FF680DA1CE2CC7D00A6C939 /* Flipboard */;
+			targetProxy = 6FF680FB1CE2CC7E00A6C939 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FF680E21CE2CC7E00A6C939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FF680E31CE2CC7E00A6C939 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FF680E71CE2CC7E00A6C939 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FF680E81CE2CC7E00A6C939 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FF681011CE2CC7E00A6C939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FF681021CE2CC7E00A6C939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FF681041CE2CC7E00A6C939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9476AA1D064DF25741F1FDD /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Flipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucool.SucoolFood.Flipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flipboard/Flipboard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6FF681051CE2CC7E00A6C939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB11D69E482DFDEA0D53D11 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Flipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucool.SucoolFood.Flipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flipboard/Flipboard-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		6FF681071CE2CC7E00A6C939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlipboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucool.SucoolFood.FlipboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flipboard.app/Flipboard";
+			};
+			name = Debug;
+		};
+		6FF681081CE2CC7E00A6C939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlipboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucool.SucoolFood.FlipboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flipboard.app/Flipboard";
+			};
+			name = Release;
+		};
+		6FF6810A1CE2CC7E00A6C939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlipboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucool.SucoolFood.FlipboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flipboard;
+			};
+			name = Debug;
+		};
+		6FF6810B1CE2CC7E00A6C939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlipboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucool.SucoolFood.FlipboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flipboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FF680D61CE2CC7D00A6C939 /* Build configuration list for PBXProject "Flipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF681011CE2CC7E00A6C939 /* Debug */,
+				6FF681021CE2CC7E00A6C939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FF681031CE2CC7E00A6C939 /* Build configuration list for PBXNativeTarget "Flipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF681041CE2CC7E00A6C939 /* Debug */,
+				6FF681051CE2CC7E00A6C939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FF681061CE2CC7E00A6C939 /* Build configuration list for PBXNativeTarget "FlipboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF681071CE2CC7E00A6C939 /* Debug */,
+				6FF681081CE2CC7E00A6C939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FF681091CE2CC7E00A6C939 /* Build configuration list for PBXNativeTarget "FlipboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF6810A1CE2CC7E00A6C939 /* Debug */,
+				6FF6810B1CE2CC7E00A6C939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FF680D31CE2CC7D00A6C939 /* Project object */;
+}
