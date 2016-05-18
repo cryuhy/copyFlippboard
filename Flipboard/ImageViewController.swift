@@ -74,6 +74,7 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.translucent = true
         
         self.configure()
         
