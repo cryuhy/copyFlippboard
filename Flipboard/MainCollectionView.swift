@@ -111,9 +111,9 @@ class MainCollectionView: UICollectionView,UICollectionViewDelegate,UICollection
         let cells = collectionView.visibleCells()
         for cell  in cells {
             let messageCell = cell as! MessageCollectionViewCell
+            messageCell.addjustImageViewHeight()
             messageCell.leftImage.image = messageCell.leftImageItem
             messageCell.rightImage.image = messageCell.rightImageItem
-            messageCell.addjustImageViewHeight()
         }
     }
 }
