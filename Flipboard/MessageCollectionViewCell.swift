@@ -41,6 +41,8 @@ class MessageCollectionViewCell: UICollectionViewCell {
         leftView.clipsToBounds = true
         rightView.clipsToBounds = true
         let Touch = UITapGestureRecognizer(target: self, action: #selector(MessageCollectionViewCell.clicked(_:)))
+        //如果xcode版本在7.3以下用下面这行代码，上一行注释，这事swift又增加了新的定义
+//        let Touch = UITapGestureRecognizer(target: self, "clicked:")
         self.backgroundColor = UIColor.whiteColor()
         self.addGestureRecognizer(Touch)
     }
