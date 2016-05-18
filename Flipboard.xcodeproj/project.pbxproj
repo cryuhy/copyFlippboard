@@ -14,6 +14,7 @@
 		6F4F07661CEAD6CD00E2AD05 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F07651CEAD6CD00E2AD05 /* ImageViewController.swift */; };
 		6FBDADF21CE4133000EC4D79 /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDADF11CE4133000EC4D79 /* MainCollectionView.swift */; };
 		6FBDADF41CE4136300EC4D79 /* MainLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDADF31CE4136300EC4D79 /* MainLayout.swift */; };
+		6FDDE7561CEC08AD005B61B7 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDE7541CEC08AD005B61B7 /* FXBlurView.m */; };
 		6FF680DF1CE2CC7E00A6C939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680DE1CE2CC7E00A6C939 /* AppDelegate.swift */; };
 		6FF680E11CE2CC7E00A6C939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680E01CE2CC7E00A6C939 /* ViewController.swift */; };
 		6FF680E41CE2CC7E00A6C939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF680E21CE2CC7E00A6C939 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		6FF680E91CE2CC7E00A6C939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF680E71CE2CC7E00A6C939 /* LaunchScreen.storyboard */; };
 		6FF680F41CE2CC7E00A6C939 /* FlipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680F31CE2CC7E00A6C939 /* FlipboardTests.swift */; };
 		6FF680FF1CE2CC7E00A6C939 /* FlipboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF680FE1CE2CC7E00A6C939 /* FlipboardUITests.swift */; };
-		804E6BC41E903848B880A772 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDE1DA3CA58FAE7D2692DD7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BB11D69E482DFDEA0D53D11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6F3449621CE3336200247480 /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
 		6F3449631CE3336200247480 /* MessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCollectionViewCell.xib; sourceTree = "<group>"; };
 		6F4213271CE58F320022CA87 /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
@@ -50,6 +49,8 @@
 		6F4F07651CEAD6CD00E2AD05 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		6FBDADF11CE4133000EC4D79 /* MainCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
 		6FBDADF31CE4136300EC4D79 /* MainLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLayout.swift; sourceTree = "<group>"; };
+		6FDDE7541CEC08AD005B61B7 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		6FDDE7551CEC08AD005B61B7 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		6FF680DB1CE2CC7D00A6C939 /* Flipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF680DE1CE2CC7E00A6C939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF680E01CE2CC7E00A6C939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,8 +65,6 @@
 		6FF680FE1CE2CC7E00A6C939 /* FlipboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipboardUITests.swift; sourceTree = "<group>"; };
 		6FF681001CE2CC7E00A6C939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FF681101CE2D7A600A6C939 /* Flipboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flipboard-Bridging-Header.h"; sourceTree = "<group>"; };
-		A9476AA1D064DF25741F1FDD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		ECDE1DA3CA58FAE7D2692DD7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804E6BC41E903848B880A772 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +103,8 @@
 		6F34495D1CE332CD00247480 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6FDDE7541CEC08AD005B61B7 /* FXBlurView.m */,
+				6FDDE7551CEC08AD005B61B7 /* FXBlurView.h */,
 				6FBDADF01CE412E200EC4D79 /* layout */,
 				6FBDADEF1CE412D300EC4D79 /* collectionView */,
 				6FBDADEE1CE412BC00EC4D79 /* cell */,
@@ -147,7 +147,6 @@
 				6FF680F21CE2CC7E00A6C939 /* FlipboardTests */,
 				6FF680FD1CE2CC7E00A6C939 /* FlipboardUITests */,
 				6FF680DC1CE2CC7D00A6C939 /* Products */,
-				76DA3AB7F86DDBF2BB2C38C3 /* Pods */,
 				9D4E581C98855D8AAA8EC613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -195,19 +194,9 @@
 			path = FlipboardUITests;
 			sourceTree = "<group>";
 		};
-		76DA3AB7F86DDBF2BB2C38C3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A9476AA1D064DF25741F1FDD /* Pods.debug.xcconfig */,
-				4BB11D69E482DFDEA0D53D11 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		9D4E581C98855D8AAA8EC613 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ECDE1DA3CA58FAE7D2692DD7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,12 +208,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FF681031CE2CC7E00A6C939 /* Build configuration list for PBXNativeTarget "Flipboard" */;
 			buildPhases = (
-				F08BD3C852F7AD5324ADCDFB /* Check Pods Manifest.lock */,
 				6FF680D71CE2CC7D00A6C939 /* Sources */,
 				6FF680D81CE2CC7D00A6C939 /* Frameworks */,
 				6FF680D91CE2CC7D00A6C939 /* Resources */,
-				377F41F3D265162DC5C1BDD3 /* Embed Pods Frameworks */,
-				390DEC66CBC368B485699385 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,54 +329,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		377F41F3D265162DC5C1BDD3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		390DEC66CBC368B485699385 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F08BD3C852F7AD5324ADCDFB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		6FF680D71CE2CC7D00A6C939 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -401,6 +339,7 @@
 				6FBDADF41CE4136300EC4D79 /* MainLayout.swift in Sources */,
 				6FBDADF21CE4133000EC4D79 /* MainCollectionView.swift in Sources */,
 				6F3449641CE3336200247480 /* MessageCollectionViewCell.swift in Sources */,
+				6FDDE7561CEC08AD005B61B7 /* FXBlurView.m in Sources */,
 				6F4213291CE58F320022CA87 /* SectionView.swift in Sources */,
 				6F4F07661CEAD6CD00E2AD05 /* ImageViewController.swift in Sources */,
 			);
@@ -544,7 +483,6 @@
 		};
 		6FF681041CE2CC7E00A6C939 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9476AA1D064DF25741F1FDD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -559,7 +497,6 @@
 		};
 		6FF681051CE2CC7E00A6C939 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BB11D69E482DFDEA0D53D11 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

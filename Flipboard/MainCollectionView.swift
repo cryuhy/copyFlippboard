@@ -65,7 +65,8 @@ class MainCollectionView: UICollectionView,UICollectionViewDelegate,UICollection
         let count = indexPath.section*2+indexPath.row
         var imageLeft:UIImage? = nil
         var imageRight:UIImage? = nil
-        dispatch_async(queue) { 
+        dispatch_async(queue) {
+            //这里有一点就是由于我用的图片太大了所以全部加载以后内存比较大，我考虑到了压缩，在这里压缩会频繁卡顿，其实可以早些把图片全部压缩的，但是为了模拟网络加载图片，我所有图片加载方法都试写在这个方法里面，所以压缩我就不考虑了
             imageLeft = UIImage(named:self.cartoonDatas[count])!
             imageRight = UIImage(named:self.startDatas[count])!
             collectionViewCell?.leftImageItem = imageLeft
@@ -112,6 +113,7 @@ class MainCollectionView: UICollectionView,UICollectionViewDelegate,UICollection
             let messageCell = cell as! MessageCollectionViewCell
             messageCell.leftImage.image = messageCell.leftImageItem
             messageCell.rightImage.image = messageCell.rightImageItem
+            messageCell.addjustImageViewHeight()
         }
     }
 }

@@ -40,11 +40,9 @@ class MessageCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         leftView.clipsToBounds = true
         rightView.clipsToBounds = true
-        let leftTouch = UITapGestureRecognizer(target: self, action: #selector(MessageCollectionViewCell.clickedLeft(_:)))
-        let rightTouch = UITapGestureRecognizer(target: self, action:#selector(MessageCollectionViewCell.clickedRight(_:)));
+        let Touch = UITapGestureRecognizer(target: self, action: #selector(MessageCollectionViewCell.clicked(_:)))
         self.backgroundColor = UIColor.whiteColor()
-        self.leftView.addGestureRecognizer(leftTouch)
-        self.rightView.addGestureRecognizer(rightTouch)
+        self.addGestureRecognizer(Touch)
     }
     internal func addjustImageViewHeight() ->Void{
         if self.leftImageItem == nil {
@@ -100,23 +98,19 @@ class MessageCollectionViewCell: UICollectionViewCell {
                 }
             queue.addOperation(operation)
         }
-     func clickedLeft(recognizer: UITapGestureRecognizer) {
+     func clicked(recognizer: UITapGestureRecognizer) {
         let mySuperView = self.superview as! UICollectionView
         let offsetY = mySuperView.contentOffset.y
         let point =  recognizer.locationInView(self.superview)
         let pointInScreen = CGPointMake(point.x, point.y-offsetY)
         let ctl = self.viewCtl(self)
-        let imageCtl = ImageViewController(image: self.leftImageItem!,animationPoint: pointInScreen)
-        ctl?.navigationController?.pushViewController(imageCtl, animated: false)
-    }
-     func clickedRight(recognizer: UITapGestureRecognizer) {
-        let mySuperView = self.superview as! UICollectionView
-        let offsetY = mySuperView.contentOffset.y
-        let point =  recognizer.locationInView(self.superview)
-        let pointInScreen = CGPointMake(point.x, point.y-offsetY)
-        print("\(pointInScreen)")
-        let ctl = self.viewCtl(self)
-        let imageCtl = ImageViewController(image: self.rightImageItem!,animationPoint: pointInScreen)
+        var image:UIImage?
+        if point.x <= Screnn_Width/2{
+            image = self.leftImageItem!
+        }else{
+            image = self.rightImageItem!
+        }
+        let imageCtl = ImageViewController(image:image! ,animationPoint: pointInScreen)
         ctl?.navigationController?.pushViewController(imageCtl, animated: false)
     }
     //通过响应者链找到ctl
