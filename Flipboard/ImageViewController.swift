@@ -11,7 +11,6 @@ import UIKit
 class ImageViewController: UIViewController {
     var animationPoint:CGPoint?//用于动画开始的点
     var maskLayer:CAShapeLayer?
-    var backButton:UIButton?
     var imageView:UIImageView? = nil
     var image:UIImage? = nil{
         willSet{
@@ -33,9 +32,6 @@ class ImageViewController: UIViewController {
         self.image = image
         self.animationPoint = animationPoint
         
-        self.backButton = UIButton(frame:  CGRectMake(0, 0, 50, 50) )
-        self.backButton?.backgroundColor = UIColor.redColor()
-        self.backButton?.setTitle("返回", forState: UIControlState.Normal)
         self.imageView = UIImageView(frame: CGRectMake(0, 0, Screnn_Width, Screnn_height))
         self.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         self.imageView?.userInteractionEnabled = true
@@ -77,13 +73,12 @@ class ImageViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBarHidden = false
         
         self.configure()
         
         self.view.backgroundColor = UIColor.blackColor()
         self.view.addSubview(self.imageView!)
-        self.backButton?.addTarget(self, action:#selector(ImageViewController.backClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        self.imageView!.addSubview(self.backButton!)
         // Do any additional setup after loading the view.
     }
 
@@ -92,9 +87,9 @@ class ImageViewController: UIViewController {
         self.view.addSubview(imageView!)
         // Dispose of any resources that can be recreated.
     }
-    func backClicked(sender:UIButton){
-        self.navigationController?.popViewControllerAnimated(true)
-    }
+//    func backClicked(sender:UIButton){
+//        self.navigationController?.popViewControllerAnimated(true)
+//    }
 
     /*
     // MARK: - Navigation

@@ -68,9 +68,9 @@ class MainCollectionView: UICollectionView,UICollectionViewDelegate,UICollection
         dispatch_async(queue) { 
             imageLeft = UIImage(named:self.cartoonDatas[count])!
             imageRight = UIImage(named:self.startDatas[count])!
-            dispatch_sync(dispatch_get_main_queue(), { 
-                collectionViewCell?.leftImageItem = imageLeft
-                collectionViewCell?.rightImageItem = imageRight
+            collectionViewCell?.leftImageItem = imageLeft
+            collectionViewCell?.rightImageItem = imageRight
+            dispatch_sync(dispatch_get_main_queue(), {
                 collectionViewCell?.addjustImageViewHeight()
                 if collectionView.contentOffset.y <= 0 {
                     //第一次加载cell的图片
@@ -106,15 +106,6 @@ class MainCollectionView: UICollectionView,UICollectionViewDelegate,UICollection
     }
     //由于加载的图片太大了所以采用微博首页加载图片的方式，当滑动停止以后才加载图片
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        let collectionView = scrollView as! MainCollectionView
-        let cells = collectionView.visibleCells()
-        for cell  in cells {
-            let messageCell = cell as! MessageCollectionViewCell
-            messageCell.leftImage.image = messageCell.leftImageItem
-            messageCell.rightImage.image = messageCell.rightImageItem
-        }
-    }
-    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let collectionView = scrollView as! MainCollectionView
         let cells = collectionView.visibleCells()
         for cell  in cells {

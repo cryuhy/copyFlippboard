@@ -86,17 +86,16 @@ class MainLayout: UICollectionViewFlowLayout{
                     }
                 }else{
                     //当sectionHeader没有达到屏幕顶部时相关计算
-                    let replaceY = (firstItem?.frame.origin.y)!-self.sectionInset.top-rect.size.height
-                    let minY = max(replaceY, currentOffsetY!)
-                    //当下一个sectionHeader已经抵到上一个sectionHeader的底部相关计算
-                    let maxY = CGRectGetMaxY((lastItem?.frame)!)+self.sectionInset.bottom-item.frame.size.height
-                    item.frame.origin.y = min(minY, maxY)
-                    sectionHeight
                     if currentOffsetY >= (firstItem?.frame.origin.y)!-self.sectionInset.top-64 {
                         item.frame.size.height = 64
                     }else{
                         item.frame.size.height = min((firstItem?.frame.origin.y)! - currentOffsetY!, sectionHeight)
                     }
+                    let replaceY = (firstItem?.frame.origin.y)!-self.sectionInset.top-item.size.height
+                    let minY = max(replaceY, currentOffsetY!)
+                    //当下一个sectionHeader已经抵到上一个sectionHeader的底部相关计算
+                    let maxY = CGRectGetMaxY((lastItem?.frame)!)+self.sectionInset.bottom-item.frame.size.height
+                    item.frame.origin.y = min(minY, maxY)
                 }
             }
         }

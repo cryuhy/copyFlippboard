@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         //更新statusbar的颜色
+        self.navigationController?.navigationBarHidden = true
         self.setNeedsStatusBarAppearanceUpdate()
     }
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
