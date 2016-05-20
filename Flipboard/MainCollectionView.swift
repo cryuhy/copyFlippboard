@@ -116,4 +116,14 @@ class MainCollectionView: UICollectionView,UICollectionViewDelegate,UICollection
             messageCell.rightImage.image = messageCell.rightImageItem
         }
     }
+    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let collectionView = scrollView as! MainCollectionView
+        let cells = collectionView.visibleCells()
+        for cell  in cells {
+            let messageCell = cell as! MessageCollectionViewCell
+            messageCell.addjustImageViewHeight()
+            messageCell.leftImage.image = messageCell.leftImageItem
+            messageCell.rightImage.image = messageCell.rightImageItem
+        }
+    }
 }
